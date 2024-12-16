@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Fundo suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    padding: 0; /* Remover qualquer padding */
+    
+}
+h1 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #333; /* Cor do título */
+}
+
+svg {
+    width: auto; /* Largura do SVG */
+    height: auto;
+    border: 2px solid #333; /* Borda ao redor do SVG */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    background-color: white; /* Fundo branco para o mapa */
+}
+path {
+    transition: fill 0.3s; /* Transição suave para a cor de preenchimento */
+}
+path:hover {
+    fill: #ffcc00; /* Cor ao passar o mouse */
+}
+#coordinates {
+    width: 50%;
+    border-radius: 10px;
+    background: white;
+    margin-top: 20px; /* Espaço acima das coordenadas */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    #coordinates {
+        width: 90%; /* Aumentar a altura em dispositivos móveis */
+    }
+}
+
+/* Media query para telas maiores (PC) */
+@media (min-width: 769px) {
+    #coordinates {
+        width: 40%; /* Aumentar a altura para telas maiores */
+    }
+}
+
+#map {
+    border: 1px solid #ccc; /* Apenas para visualização */
+    background-color: rgb(86, 86, 151); /* Cor de fundo do mapa */
+    width: 90%; /* Largura total do contêiner */
+    height: 60%; /* Aumentar a altura padrão para telas maiores */
+    max-width: 800px; /* Largura máxima para telas grandes */
+    max-height: 460px; /* Altura máxima para telas grandes */
+    padding: 0;
+    margin: 0;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+    #map {
+        height: 60%; /* Aumentar a altura em dispositivos móveis */
+    }
+}
+
+/* Media query para telas maiores (PC) */
+@media (min-width: 769px) {
+    #map {
+        height: 60%; /* Aumentar a altura para telas maiores */
+    }
+}
+
+#backButton {
+    background-color: #457947; /* Cor de fundo azul */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+    margin-top: 20px; /* Espaço acima do botão */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#backButton:hover {
+    background-color: #375e39; /* Cor de fundo ao passar o mouse */
+}
