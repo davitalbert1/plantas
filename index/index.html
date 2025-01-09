@@ -21,6 +21,19 @@
                     <input type="text" class="texto" id="nome" readonly>
                 </div>
                 <div class="encapsular">
+                    <label for="tipo">Tipo</label>
+                    <select name="tipo" id="tipo">
+                        <option value="1">Planta</option>
+                        <option value="2">Animal</option>
+                        <option value="3">Construção</option>
+                        <option value="4">Objeto</option>
+                    </select>
+                </div>
+                <div class="encapsular">
+                    <label for="Data">Data de início</label>
+                    <input type="date" class="Data" readonly>
+                </div>
+                <div class="encapsular">
                     <label for="descricao">Descrição</label>
                     <input type="descricao" class="texto" id="descricao" readonly>
                 </div>
@@ -30,6 +43,23 @@
                 <div class="encapsular">
                     <label for="nome">Nome</label>
                     <input type="text" class="texto" id="nome" readonly>
+                </div>
+                <div class="encapsular">
+                    <label for="tipo">Tipo</label>
+                    <select name="tipo" id="tipo">
+                        <option value="1">Planta</option>
+                        <option value="2">Animal</option>
+                        <option value="3">Construção</option>
+                        <option value="4">Objeto</option>
+                    </select>
+                </div>
+                <div class="encapsular">
+                    <label for="Data">Data de início</label>
+                    <input type="date" class="Data" readonly>
+                </div>
+                <div class="encapsular">
+                    <label for="producao">Produção</label>
+                    <input type="text" class="Data" readonly>
                 </div>
                 <div class="encapsular">
                     <label for="descricao">Descrição</label>
@@ -44,7 +74,7 @@
     <div id="modal">
         <span id="close" class="close">X</span>
         <div id="content" class="modal-content">
-            <h2>Nova Planta</h2>
+            <h2>Adicionar</h2>
             <div class="encapsular">
                 <label for="nome">Nome</label>
                 <input type="text" class="texto" id="nome" placeholder="Digite o nome da planta">
@@ -57,6 +87,14 @@
                     <option value="3">Construção</option>
                     <option value="4">Objeto</option>
                 </select>
+            </div>
+            <div class="encapsular">
+                <label for="Data">Data de início</label>
+                <input type="date" class="Data">
+            </div>
+            <div class="encapsular">
+                <label for="producao">Produção</label>
+                <input type="text" class="Data">
             </div>
             <div class="encapsular">
                 <label for="descricao">Descrição</label>
