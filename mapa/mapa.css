@@ -6,13 +6,27 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Ocupa toda a altura da tela */
-    padding: 0; /* Remover qualquer padding */
+    height: 100vh;
+    background: rgb(142, 180, 142);
+    margin: auto;
+    color: rgb(41, 25, 25);
     
 }
+header{
+    background: rgb(100, 128, 100);
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    justify-content: space-between;
+    padding: 20px 10px;
+    width: 100%;
+}
 h1 {
-    margin-bottom: 20px; /* Espaço abaixo do título */
-    color: #333; /* Cor do título */
+    width: 10%;
+    margin: 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(92, 56, 56);
 }
 
 svg {
@@ -20,77 +34,65 @@ svg {
     height: auto;
     border: 2px solid #333; /* Borda ao redor do SVG */
     border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para profundidade */
+    box-shadow: 10px 10px 23px -7px rgba(87,73,51,0.6);
     background-color: white; /* Fundo branco para o mapa */
-}
-path {
-    transition: fill 0.3s; /* Transição suave para a cor de preenchimento */
-}
-path:hover {
-    fill: #ffcc00; /* Cor ao passar o mouse */
 }
 #coordinates {
     width: 50%;
     border-radius: 10px;
-    background: white;
+    background: rgb(163, 101, 101);
     margin-top: 20px; /* Espaço acima das coordenadas */
     font-size: 16px; /* Tamanho da fonte */
     color: #333; /* Cor do texto */
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(92, 56, 56);
     text-align: center;
-}
-@media (max-width: 768px) {
-    #coordinates {
-        width: 90%; /* Aumentar a altura em dispositivos móveis */
-    }
-}
-
-/* Media query para telas maiores (PC) */
-@media (min-width: 769px) {
-    #coordinates {
-        width: 40%; /* Aumentar a altura para telas maiores */
-    }
+    box-shadow: 10px 10px 23px -7px rgba(87,73,51,0.6);
 }
 
 #map {
-    border: 1px solid #ccc; /* Apenas para visualização */
+    border: 1px solid rgb(92, 56, 56);
     background-color: rgb(86, 86, 151); /* Cor de fundo do mapa */
     width: 90%; /* Largura total do contêiner */
-    height: 60%; /* Aumentar a altura padrão para telas maiores */
-    max-width: 800px; /* Largura máxima para telas grandes */
-    max-height: 460px; /* Altura máxima para telas grandes */
+    height: 60%;
+    max-width: 800px;
+    max-height: 460px;
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
-
-/* Media query para dispositivos móveis */
-@media (max-width: 768px) {
-    #map {
-        height: 60%; /* Aumentar a altura em dispositivos móveis */
-    }
+Button {
+    background-color: rgb(117, 77, 77);
+    border: 1px solid rgb(92, 56, 56);
+    box-shadow: 10px 10px 23px -7px rgba(87,73,51,0.6);
+    border-radius: 4px;
+    height: 50px;
+    width: 20%;
+    margin: 5px 40%;
+    cursor: pointer;
+    font-size: 0px;
 }
-
-/* Media query para telas maiores (PC) */
-@media (min-width: 769px) {
-    #map {
-        height: 60%; /* Aumentar a altura para telas maiores */
-    }
+header Button {
+    background-color: rgb(117, 77, 77);
+    border: 1px solid rgb(92, 56, 56);
+    box-shadow: 10px 10px 23px -7px rgba(87,73,51,0.6);
+    border-radius: 4px;
+    height: 50px;
+    width: 20%;
+    cursor: pointer;
+    font-size: 0px;
+    margin: 0;
+    margin-left: 5px;
 }
-
-#backButton {
-    background-color: #457947; /* Cor de fundo azul */
-    color: white; /* Cor do texto */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    padding: 10px 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-    margin-top: 20px; /* Espaço acima do botão */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#perfil{
+    background: rgb(163, 101, 101);
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 23px -7px rgba(87,73,51,0.6);
+    cursor: pointer;
+    margin-right: 5px;
 }
-
-#backButton:hover {
-    background-color: #375e39; /* Cor de fundo ao passar o mouse */
+#perfil:hover{
+    background: rgb(114, 70, 70);
 }

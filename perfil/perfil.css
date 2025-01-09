@@ -1,0 +1,71 @@
+body{
+    background: rgb(142, 180, 142);
+    margin: auto;
+    color: rgb(41, 25, 25);
+}
+main ul{
+    background: rgb(192, 121, 121);
+    border-radius: 4px;
+    min-height: 50px;
+    width: 75%;
+    margin: 10px auto;
+    box-shadow: 10px 10px 23px -7px rgba(87,73,51,0.5);
+    padding: 10px;
+}
+header{
+    background: rgb(100, 128, 100);
+    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+button{
+    background-color: rgb(117, 77, 77);
+    border: 1px solid rgb(92, 56, 56);
+    border-radius: 4px;
+    height: 50px;
+    width: 10%;
+    cursor: pointer;
+    font-size: 30px;
+}
+main h1{
+    border-bottom: 2px solid rgb(92, 56, 56);
+}
+h2{
+    text-align: center;
+}
+input, select{
+    background-color: rgb(117, 77, 77);
+    border: 1px solid rgb(92, 56, 56);
+    border-radius: 3px;
+    width: 99%;
+    max-width: 1-00px;
+    height: 25px;
+    font-size: 20px;
+}
+select{
+    cursor: pointer;
+}
+.planta{
+    background: rgb(156, 110, 110);
+    border: 1px solid rgb(131, 73, 73);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+.planta button{
+    margin: 5px 40%;
+}
+#perfil{
+    background: rgb(163, 101, 101);
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 23px -7px rgba(87,73,51,0.6);
+    cursor: pointer;
+}
+#perfil:hover{
+    background: rgb(114, 70, 70);
+}

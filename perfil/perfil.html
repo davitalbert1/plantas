@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfil.css">
+    <title>Perfil</title>
+</head>
+<body>
+    <header>
+        <button onclick="index();">Voltar</button>
+        <h1>Perfil</h1>
+        <div id="perfil"></div>
+    </header>
+    <main>
+        <ul>
+            <div class="planta">
+                <h2>Preferências</h2>
+                <h1>Horta</h1>
+                <div class="encapsular">
+                    <label for="nome">Nome</label>
+                    <input type="text" class="texto" id="nome" readonly>
+                </div>
+                <div class="encapsular">
+                    <label for="descricao">Coordenadas</label>
+                    <input type="descricao" class="texto" id="descricao" readonly>
+                </div>
+                <div class="encapsular">
+                    <label for="descricao">Tipo de lugar</label>
+                    <select name="item" id="item">
+                        <option value="1">Casa</option>
+                        <option value="2">Apartamento</option>
+                        <option value="3">Racho/Fazenda</option>
+                    </select>
+                </div>
+                <h1>Conta</h1>
+                <div class="encapsular">
+                    <label for="Nome">Nome</label>
+                    <input type="text" class="Nome" id="Nome" readonly>
+                </div>
+                <div class="encapsular">
+                    <label for="Email">Email</label>
+                    <input type="email" class="Email" id="Email" readonly>
+                </div>
+                <div class="encapsular">
+                    <label for="Senha">Senha</label>
+                    <input type="password" class="password" id="Senha" readonly>
+                </div>
+                <button>Editar</button>
+            </div>
+        </ul>
+    </main>
+    <script src="perfil.js"></script>
+</body>
+</html>

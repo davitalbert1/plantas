@@ -137,3 +137,11 @@ svg.on("click", (event) => {
         console.error('Erro ao salvar as informações:', error);
     });
 });
+
+function index(){
+    window.open("../index/index.html", "_self");
+}
+
+function perfil(){
+    window.open("../perfil/perfil.html", "_self");
+}
