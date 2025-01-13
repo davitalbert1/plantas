@@ -1,44 +1,57 @@
-body{
-    background: rgb(142, 180, 142);
-    margin: auto;
-    color: rgb(41, 25, 25);
+:root {
+    --cor-fundo-verde: rgb(142, 180, 142); /* Verde claro para body e header */
+    --cor-fundo-verde-escuro: rgb(100, 128, 100); /* Verde escuro para header e modal */
+    --cor-fundo-marrom-claro: rgb(192, 121, 121); /* Marrom claro para ul e planta */
+    --cor-fundo-marrom-escuro: rgb(117, 77, 77); /* Marrom escuro para botão, input e perfil */
+    --cor-borda-marrom: rgb(92, 56, 56); /* Marrom escuro para bordas */
+    --cor-texto-escuro: rgb(41, 25, 25); /* Cor do texto */
+    --cor-sombra: rgba(87, 73, 51, 0.5); /* Sombra para ul e perfil */
+    --cor-fundo-perfil-hover: rgb(114, 70, 70); /* Cor de hover do perfil */
 }
-main ul{
-    background: rgb(192, 121, 121);
+::placeholder {
+    color: var(--cor-texto-escuro);
+}
+body {
+    background: var(--cor-fundo-verde);
+    color: var(--cor-texto-escuro);
+    margin: auto;
+}
+main ul {
+    background: var(--cor-fundo-marrom-claro);
+    box-shadow: 10px 10px 23px -7px var(--cor-sombra);
+    margin: 10px auto;
     border-radius: 4px;
     min-height: 50px;
     width: 75%;
-    margin: 10px auto;
-    box-shadow: 10px 10px 23px -7px rgba(87,73,51,0.5);
     padding: 10px;
 }
-header{
-    background: rgb(100, 128, 100);
+main h1 {
+    border-bottom: 2px solid var(--cor-borda-marrom);
+}
+header {
+    background: var(--cor-fundo-verde-escuro);
     display: flex;
+    justify-content: space-between;
     left: 0;
     right: 0;
     top: 0;
-    justify-content: space-between;
     padding: 20px 10px;
 }
-button{
-    background-color: rgb(117, 77, 77);
-    border: 1px solid rgb(92, 56, 56);
+button {
+    background-color: var(--cor-fundo-marrom-escuro);
+    border: 1px solid var(--cor-borda-marrom);
+    cursor: pointer;
     border-radius: 4px;
     height: 50px;
-    cursor: pointer;
     font-size: 30px;
     margin-top: 10px;
 }
-main h1{
-    border-bottom: 2px solid rgb(92, 56, 56);
-}
-h2{
+h2 {
     text-align: center;
 }
-input, select{
-    background-color: rgb(117, 77, 77);
-    border: 1px solid rgb(92, 56, 56);
+input, select {
+    background-color: var(--cor-fundo-marrom-escuro);
+    border: 1px solid var(--cor-borda-marrom);
     border-radius: 3px;
     width: 99%;
     max-width: 1000px;
@@ -46,36 +59,37 @@ input, select{
     font-size: 20px;
     margin-bottom: 10px;
 }
-select{
+
+select {
     cursor: pointer;
     pointer-events: none;
     touch-action: none;
 }
-.encapsular{
+.encapsular {
     margin: 10px 5%;
 }
-.botao{
+.botao {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 10px auto;
     width: 50%;
 }
-.planta{
-    background: rgb(156, 110, 110);
-    border: 1px solid rgb(131, 73, 73);
+.planta {
+    background: var(--cor-fundo-marrom-claro);
+    border: 1px solid var(--cor-borda-marrom);
     border-radius: 5px;
     padding: 5px;
     margin: 10px;
 }
-#perfil{
-    background: rgb(163, 101, 101);
+#perfil {
+    background: var(--cor-fundo-marrom-escuro);
+    box-shadow: 10px 10px 23px -7px var(--cor-sombra);
+    cursor: pointer;
     width: 75px;
     height: 75px;
     border-radius: 5px;
-    box-shadow: 10px 10px 23px -7px rgba(87,73,51,0.6);
-    cursor: pointer;
 }
-#perfil:hover{
-    background: rgb(114, 70, 70);
+#perfil:hover {
+    background: var(--cor-fundo-perfil-hover);
 }
